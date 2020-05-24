@@ -14,7 +14,7 @@ const createServer = () => {
 
   // routes go here
   app.get('/', (req, res) => {
-    res.status(200).send()
+    res.send().status(200)
   })
 
   app.delete('/things/1', (req, res) => {
