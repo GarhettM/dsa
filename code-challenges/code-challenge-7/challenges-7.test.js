@@ -203,14 +203,14 @@ Run your tests from the console: jest challenges-07.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-xdescribe('Testing challenge 1', () => {
+describe('Testing challenge 1', () => {
   test('It should add tea to the list', () => {
     addTea();
     expect($('li:nth-child(6)').text()).toStrictEqual('tea');
   })
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return two raised to the power of the integer', () => {
     expect(forLoopTwoToThe([0, 4, 5])).toStrictEqual([1, 16, 32]);
     expect(forLoopTwoToThe([0, 4, 5]).length).toStrictEqual(3);
@@ -221,7 +221,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return two raised to the power of the integer', () => {
     expect(forEachTwoToThe([0, 4, 5])).toStrictEqual([1, 16, 32]);
     expect(forEachTwoToThe([0, 4, 5]).length).toStrictEqual(3);

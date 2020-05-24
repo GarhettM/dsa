@@ -13,7 +13,8 @@ Note the space in between first and last names.
 const toLastNames = people => {
   // Solution code here
   return people.map(val => {
-    return val;
+    let result = `${val.firstName}` + ' ' + `${val.lastName}`;
+    return result;
   });
 };
 
@@ -83,6 +84,8 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
+  const regex = /^([0-9]{3}|\([0-9]{3}\))([ -]?)([0-9]{3})([ -]?)([0-9]{4})$/gm;
+  return regex.test(phoneNumber);
 
 }
 /* ------------------------------------------------------------------------------------------------

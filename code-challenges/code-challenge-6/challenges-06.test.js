@@ -103,9 +103,7 @@ Write a function named getHouses that returns a new array containing the names o
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
-  houses.push(Object.values(this.house));
-  console.log(this.house)
-  console.log(houses)
+  arr.forEach(curr => houses.push(curr.house))
   return houses;
 };
 
@@ -199,7 +197,7 @@ Run your tests from the console: jest challenges-06.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-xdescribe('Testing challenge 1', () => {
+describe('Testing challenge 1', () => {
   test('It should return html markup with the character', () => {
     const filledTemplates = templatingWithMustache();
     expect(filledTemplates).toStrictEqual([`
@@ -254,7 +252,7 @@ xdescribe('Testing challenge 1', () => {
   })
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return the keys from an object', () => {
     expect(getCourseKeys(courseInfo)).toStrictEqual(['name', 'duration', 'topics', 'finalExam']);
   });
@@ -267,7 +265,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return true for characters that have children', () => {
     expect(hasChildrenValues(characters, 'Daenarys')).toBeTruthy();
   });
@@ -277,7 +275,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return true for characters that have children', () => {
     expect(hasChildrenEntries(characters, 'Eddard')).toBeTruthy();
   });

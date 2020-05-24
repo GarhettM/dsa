@@ -253,6 +253,10 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
+  return arr.reduce((acc, val) => {
+    acc.push(val.name);
+    return acc;
+  }, []);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -263,9 +267,10 @@ Write a function named reversedString that takes in a string and returns a strin
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
 
-const reversedString = (str) => {
+const reversedString = (str) => str.split('').reduce((acc, val) => val+acc, '');
   // Solution code here...
-};
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
@@ -460,14 +465,14 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return an array continaing the names of the characters', () => {
     expect(returnNames(starWarsData)).toStrictEqual([ 'Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa' ]);
     expect(returnNames(starWarsData).length).toStrictEqual(5);
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return the string with the characters in reverse order', () => {
     expect(reversedString('Code 301')).toStrictEqual('103 edoC');
   });
