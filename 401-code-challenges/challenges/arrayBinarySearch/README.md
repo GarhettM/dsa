@@ -14,4 +14,6 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 I always write the test first. Then, I test the "test" by hard coding the answer into the exported .js file. Once the test passed, then I went to work writing the function to run through the test. 
 
 ## Solution
-![image](../challenges/assets/code3 whiteboard.PNG)
+
+![image](challenges/assets/code3 whiteboard.PNG)
+
