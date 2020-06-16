@@ -1,0 +1,17 @@
+{
+  "name": "linkedList",
+  "version": "1.0.0",
+  "description": "THis challenge was to utilize linked lists. The explanation for linked lists was hard to understand, but once I logged a linked list that was 3 nodes long, I saw that it wasnt a chain of nodes but more a \"russian nesting doll\" chain of nodes. The head of the list, has the \"next\" box inside its own node. NOT outside.",
+  "main": "linked-list.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.0.1",
+    "minimist": "^1.2.5"
+  }
+}
