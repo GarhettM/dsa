@@ -7,3 +7,9 @@ Class 6 Tests: Append, InsertBefore, InsertAfter
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
+
+## WhiteBoard
+I'm still not too familiar with what the whiteboard is supposed to signify but I drew what I was working on to help understand what the nodes were doing.
+
+![image](assets/codechallenge6.PNG)
+
