@@ -125,19 +125,21 @@ class LinkedList {
   searchNode(nth) {
     let current = this.head;
     let k = this.counter() - (nth); 
-    let j = 0 + k -1;
+    let j = k - 1;
     let i = 0;
 
+
+    let a = [];
     while (current) {
-      console.log('k ', k)
-      console.log('i ', i)
-      console.log('j ', j)
-      if (i === j || j === -1)  {
-        console.log('this is value ', current.value)
+
+      if (i === j)  {
+        a.push(current.value);
       }
       i++
       current = current.next
     }
+
+    return a[0];
   }
 }
 
@@ -157,7 +159,7 @@ linkedList.insert('2')
 linkedList.insert('8')
 linkedList.insert('3')
 linkedList.append('1')
-linkedList.searchNode(0);
+linkedList.searchNode(2);
 
 // linkedList.toString();
 
