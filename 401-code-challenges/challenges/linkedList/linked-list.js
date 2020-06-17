@@ -84,7 +84,7 @@ class LinkedList {
     let current = this.head;
     let newNode = new Node(newVal);
 
-    while (current.next)  {
+    while (current)  {
       
       if (current.value === value) {
         let newNext = current.next
@@ -111,6 +111,34 @@ class LinkedList {
     }
     return this.head;
   }
+
+  counter() {
+    let current = this.head;
+    let i = 0;
+    while(current)  {
+      i++;
+      current = current.next;
+    }
+    return i;
+  }
+
+  searchNode(nth) {
+    let current = this.head;
+    let k = this.counter() - (nth); 
+    let j = 0 + k -1;
+    let i = 0;
+
+    while (current) {
+      console.log('k ', k)
+      console.log('i ', i)
+      console.log('j ', j)
+      if (i === j || j === -1)  {
+        console.log('this is value ', current.value)
+      }
+      i++
+      current = current.next
+    }
+  }
 }
 
 
@@ -123,12 +151,15 @@ class Node {
 }
 
 
-// const linkedList = new LinkedList();
+const linkedList = new LinkedList();
 
-// linkedList.insert('1')
-// linkedList.insert('2')
-// linkedList.insert('3')
-// linkedList.append('4')
+linkedList.insert('2')
+linkedList.insert('8')
+linkedList.insert('3')
+linkedList.append('1')
+linkedList.searchNode(0);
+
+// linkedList.toString();
 
 
 
