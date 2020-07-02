@@ -13,13 +13,16 @@ class kAryTree {
   }
 
   preOrder(root) {
-    console.log(root.value)
+    let x = [];
+    x.push(root.value)
 
     for (let i = 0; i < root.children.length; i++) {
       if (root.children[i] !== null) {
-        this.preOrder(root.children[i])
+        
+        x.push(this.preOrder(root.children[i]))
       }
     }
+    return x;
   }
 
   fizzBuzz(root) {
@@ -93,5 +96,9 @@ tree.root.children[1].children[0] = new Node(7)
 
 // tree.postOrder(tree.root)
 
-console.log(tree.fizzBuzz(tree.root))
+console.log(tree.preOrder(tree.fizzBuzz(tree.root)))
 
+module.exports = {
+  Node,
+  kAryTree,
+}
