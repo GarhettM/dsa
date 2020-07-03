@@ -28,6 +28,6 @@ myQueue.enqueue(15);
 myQueue.enqueue(20);
 console.info('first log', myQueue);
 myQueue.enqueue(5);
-console.log(myQueue);
-console.info(myQueue.dequeue());
+console.log('24234', myQueue);
+console.info('asdfa', myQueue.dequeue());
 console.log(myQueue);
