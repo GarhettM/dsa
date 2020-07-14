@@ -1,14 +1,28 @@
 'use strict';
 
 class Node {
-  constructor(value)  {
-    this.value = value;
+  constructor(animal)  {
+    this.value = animal;
     this.next = null;
   }
 }
 
 class AnimalShelter {
   constructor() {
-    this.head = null;
+    this.rear = null;
+    this.front = null;
+  }
+
+  enqueue(animal) {
+    let newAnimal = new Node(animal)
+
+    this.rear ? (this.rear.next = newAnimal) : (this.front = newAnimal)
+
+
+    // if(this.rear) {
+    //   this.rear.next = newAnimal;
+    // } else {
+    //   this.front = newAnimal
+    // }
   }
 }

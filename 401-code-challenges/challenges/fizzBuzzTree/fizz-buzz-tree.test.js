@@ -21,8 +21,5 @@ describe('Testing code challenge: FizzBuzz challenge 18.', () => {
       [ 'fizz', [ '7' ] ],
       [ '4' ]
     ]);
-
-
-
   });
 });

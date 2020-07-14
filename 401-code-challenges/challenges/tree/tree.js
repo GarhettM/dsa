@@ -44,6 +44,43 @@ class BinaryTree {
     }
     console.log(root.value)
   }
+
+  compareLeaves(treeRootA, treeRootB) {
+    const rootA = treeRootA.root;
+    const rootB = treeRootB.root;
+    let treeA = 0;
+    let treeB = 0;
+
+    function traverseA(rootA, treeA)  {
+      if(rootA.left)  {
+        if(rootA.left === null && rootA.right === null) {
+          treeA++
+          console.log(treeA)
+        }
+        console.log(rootA.left)
+        traverseA(rootA.left, treeA);
+      }
+
+      return treeA;
+    }
+
+    function traverseB(rootB, treeB)  {
+      if(rootB)  {
+        if(rootB.left === null && rootB.right === null) {
+          treeB++
+        }
+        traverseB(rootB.left, treeB);
+      }
+
+      return treeB;
+    }
+
+    if(traverseA(rootA, treeA) === traverseB(rootB, treeB)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
 class BinarySearchTree {
@@ -61,13 +98,22 @@ class BinarySearchTree {
 }
 
 let tree = new BinaryTree();
+let treeA = new BinaryTree();
+let treeB = new BinaryTree();
 
-tree.root = new Node(1);
-tree.root.left = new Node(2);
-tree.root.right = new Node(3);
-tree.root.left.left = new Node(4);
-tree.root.left.right = new Node(5);
-tree.root.right.left = new Node(6);
-tree.root.right.left.left = new Node(7)
+treeA.root = new Node(1);
+treeA.root.left = new Node(2);
+treeA.root.right = new Node(3);
+treeA.root.left.left = new Node(4);
+treeA.root.left.right = new Node(5);
+treeA.root.right.left = new Node(6);
+treeA.root.right.left.left = new Node(7)
 
-tree.postOrder(tree.root)
+treeB.root = new Node(1);
+treeB.root.left = new Node(2);
+treeB.root.right = new Node(3);
+treeB.root.left.right = new Node(5);
+treeB.root.right.left = new Node(6);
+
+
+console.log(tree.compareLeaves(treeA, treeB))
