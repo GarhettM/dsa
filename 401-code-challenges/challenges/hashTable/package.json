@@ -1,8 +1,8 @@
 {
-  "name": "401-code-challenges",
+  "name": "hashTable",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "hashTable.js",
   "scripts": {
     "test": "jest --coverage --verbose",
     "watch": "jest --watchAll"
