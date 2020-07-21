@@ -15,30 +15,47 @@ class BinaryTree {
     this.allValObj = {}
   }
 
-  preOrderPushValues(root)  {
+  preOrderPushValuesToArr(root)  {
     this.allValArr.push(root.value)
-    this.allValObj[root.value] = 'match'
     if(root.left !== null)  {
-      this.preOrderPushValues(root.left)
+      this.preOrderPushValuesToArr(root.left)
     }
     if(root.right !== null)  {
-      this.preOrderPushValues(root.right)
+      this.preOrderPushValuesToArr(root.right)
     }
     return this.allValArr
+  }
+
+  preOrderPushValuesToObj(root)  {
+    this.allValObj[root.value] = 'match'
+    if(root.left !== null)  {
+      this.preOrderPushValuesToObj(root.left)
+    }
+    if(root.right !== null)  {
+      this.preOrderPushValuesToObj(root.right)
+    }
+    return this.allValObj
   }
 }
 
 function treeIntersection(tree1, tree2) {
-  let arr1 = [...tree1.preOrderPushValues(tree1.root)]
-  tree2.preOrderPushValues(tree2.root)
-  let obj2 = tree2.allValObj
+  let arr1 = [...tree1.preOrderPushValuesToArr(tree1.root)]
+  let obj2 = {...tree2.preOrderPushValuesToObj(tree2.root)}
   let values = [];
+  let validate = false
+  
   for(let i = 0; i < arr1.length; i++)  {
     if (obj2[arr1[i]] === 'match') {
+      validate = true
       values.push(arr1[i])
     }     
   }
-  return values;
+
+  if(validate === false) {
+    return 'No Matching Values'
+  } else {
+    return values;
+  }
 }
 
 
