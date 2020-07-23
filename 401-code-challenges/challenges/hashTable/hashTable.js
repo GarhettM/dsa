@@ -4,6 +4,8 @@ class HashMap {
   constructor(size) {
     this.size = size;
     this.buckets = new Array(size)
+    this.keysArr = [];
+    this.keysObj = {};
   }
 
 
@@ -18,12 +20,14 @@ class HashMap {
   }
 
   add(key, value) {
+    this.keysArr.push(key)
+    this.keysObj[key] = value;
     let hash = this.hash(key);
-    if (!this.buckets[hash])  {
+    if (!this.buckets[hash]) {
       this.buckets[hash] = new LinkedList();
     }
 
-    let entry = { [key]: value};
+    let entry = { [key]: value };
 
     this.buckets[hash].add(entry)
     return this.buckets[hash]
@@ -32,52 +36,53 @@ class HashMap {
   get(key) {
     let getIndex = this.buckets[this.hash(key)]
 
-    if(!getIndex) {
+    if (!getIndex) {
       console.log('No Value')
       return 'No Value';
-    } 
+    }
 
-    if(getIndex)  {
-      let values = []
+    if (getIndex) {
+      let values = ''
       let current = getIndex.head
-      while(current)  {
+      while (current) {
         let test = Object.keys(current.value)
-
-        if(key === test[0]) {
+        if (key === test[0]) {
           let retVal = Object.values(current)
-          values.push((Object.values(retVal[0]))[0])
-        } else {
-          console.log('No Value')
-          return 'No Value';
+          values = (Object.values(retVal[0]))[0]
         }
         current = current.next;
       }
-      return values
-    }
-  }
-
-  contains(key) {
-    let boolean = false
-    let getIndex = this.buckets[this.hash(key)]
-
-    if(!getIndex) {
-      console.log(false)
-      return false;
-    }
-    if(getIndex)  {
-      let current = getIndex.head
-      while(current)  {
-        let test = Object.keys(current.value)
-
-        if(key === test[0]) {
-          boolean = true
-        }
-        current = current.next;
+      if (values !== '') {
+        return values
+      } else {
+        return 'No Value';
       }
-      return boolean
     }
   }
-} 
+
+
+contains(key) {
+  let boolean = false
+  let getIndex = this.buckets[this.hash(key)]
+
+  if (!getIndex) {
+    console.log(false)
+    return false;
+  }
+  if (getIndex) {
+    let current = getIndex.head
+    while (current) {
+      let test = Object.keys(current.value)
+
+      if (key === test[0]) {
+        boolean = true
+      }
+      current = current.next;
+    }
+    return boolean
+  }
+}
+}
 
 class Node {
   constructor(value) {
@@ -116,11 +121,6 @@ class LinkedList {
   }
 }
 
-const newHash = new HashMap(5);
-
-newHash.add('test', 'testVal')
-
-console.log(newHash.get('test'))
 module.exports = {
   HashMap,
   LinkedList,
