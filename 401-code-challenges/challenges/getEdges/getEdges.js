@@ -52,49 +52,20 @@ class Graph {
                 price += value[j].price;
                 toggle = true;
                 break;
-              }
+              };
               toggle = false;
-            }
-          }
-        } 
+            };
+          };
+        } ;
       } else {
         return `${false} $0`;
-      }
-    }
+      };
+    };
     if (price !== 0) {
       return `${true} $${price}`
-    }
-  }
-
-  size() {
-    return `Graph has ${this.count} verteces`;
-  }
-}
-
-const graph = new Graph();
-
-const cities = ['Pandora', 'Arendelle', 'Monstropolis', 'Naboo', 'Metroville', 'Narnia'];
-
-graph.addCities(cities)
-graph.addRoute('Pandora', 'Arendelle', 150);
-graph.addRoute('Arendelle', 'Monstropolis', 42);
-graph.addRoute('Monstropolis', 'Naboo', 73)
-graph.addRoute('Metroville', 'Arendelle', 99);
-graph.addRoute('Metroville', 'Pandora', 82);
-graph.addRoute('Metroville', 'Naboo', 26);
-graph.addRoute('Metroville', 'Narnia', 37);
-graph.addRoute('Metroville', 'Monstropolis', 105);
-graph.addRoute('Naboo', 'Monstropolis', 73);
-graph.addRoute('Narnia', 'Naboo', 250);
-
-console.log(graph.getRoute(['Metroville', 'Pandora']))
-console.log(graph.getRoute(['Arendelle', 'Monstropolis', 'Naboo']))
-console.log(graph.getRoute(['Naboo', 'Pandora']))
-console.log(graph.getRoute(['Narnia', 'Arendelle', 'Naboo']))
-
-
-
-
+    };
+  };
+};
 
 module.exports = {
   Vertex,
