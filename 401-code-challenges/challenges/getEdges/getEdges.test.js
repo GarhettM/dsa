@@ -3,8 +3,6 @@
 const testFile = require('./getEdges.js');
 
 const Graph = testFile.Graph;
-const Edge = testFile.Edge;
-const Vertex = testFile.Vertex
 
 const graph = new Graph();
 
@@ -27,9 +25,9 @@ describe('This test will test your ability to traverse edges in a graph.', () =>
     const flight1 = ['Seattle', 'Portland']
     const flight2 = ['Seattle', 'Chicago', 'Los-Angeles']
     const flight3 = ['Seattle', 'Denver', 'Chicago', 'Los-Angeles']
-    expect(graph.getRoute(flight1)).toStrictEqual(true $220)
-    expect(graph.getRoute(flight2)).toStrictEqual(true $680)
-    expect(graph.getRoute(flight3)).toStrictEqual()
+    expect(graph.getRoute(flight1)).toEqual(`true $220`)
+    expect(graph.getRoute(flight2)).toEqual(`true $680`)
+    expect(graph.getRoute(flight3)).toEqual('false $0')
 
   })
 })
