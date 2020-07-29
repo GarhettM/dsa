@@ -56,7 +56,7 @@ class Graph {
               toggle = false;
             };
           };
-        } ;
+        };
       } else {
         return `${false} $0`;
       };
