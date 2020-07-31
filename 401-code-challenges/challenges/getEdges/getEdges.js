@@ -1,6 +1,7 @@
 'use strict';
 
-const util = require('util')
+const util = require('util');
+const { getDefaultSettings } = require('http2');
 
 
 class Vertex {
@@ -46,6 +47,7 @@ class Graph {
     for (let i = 0; i < arr.length - 1; i++) {
       if (toggle) {
         for (let [key, value] of this.adList) {
+          console.log([key, value])
           if (key.value === arr[i]) {
             for (let j = 0; j < value.length; j++) {
               if (value[j].destination === arr[i + 1]) {
@@ -67,6 +69,23 @@ class Graph {
   };
 };
 
+const graph = new Graph();
+
+const cities = ['Seattle', 'Portland', 'Los-Angeles', 'Chicago', 'Denver', 'New-York'];
+
+graph.addCities(cities)
+
+graph.addRoute('Seattle', 'Portland', 220)
+graph.addRoute('Seattle', 'Chicago', 340)
+graph.addRoute('Portland', 'Chicago', 300)
+graph.addRoute('Denver', 'Chicago', 200)
+graph.addRoute('New-York', 'Denver', 400)
+graph.addRoute('New-York', 'Seattle', 650)
+graph.addRoute('Chicago', 'Los-Angeles', 340)
+graph.addRoute('Portland', 'Los-Angeles', 190)
+
+const flight2 = ['Seattle', 'Chicago', 'Los-Angeles']
+graph.getRoute(flight2)
 module.exports = {
   Vertex,
   Edge,

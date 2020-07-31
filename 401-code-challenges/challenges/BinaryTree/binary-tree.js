@@ -157,10 +157,30 @@ tree.root.left.right = new Node(5);
 tree.root.right.left = new Node(6);
 tree.root.right.left.left = new Node(7)
 
-tree.breadthFirst(tree.root)
+// tree.breadthFirst(tree.root)
 
+function recursive(tree, num) {
+  persist += tree.root.value
+  tree = tree.root
 
+  if(persist === num)  {
+    return true;
+  }
+  if(persist > num)  {
+    return false
+  }
+  if(persist < num)  {
+    if(tree.left) {
+      recursive(tree.left, num)
+    }
+    if(tree.right) {
+      recursive(tree.right, num)
+    }
+  }
+  return false;
+}
 
+console.log(recursive(tree.root, 10))
 module.exports = {
   Node,
   BinaryTree,
