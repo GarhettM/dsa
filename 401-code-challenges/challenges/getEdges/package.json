@@ -1,0 +1,16 @@
+{
+  "name": "getEdges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getEdges.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.1.0"
+  }
+}

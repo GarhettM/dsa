@@ -1,0 +1,17 @@
+{
+  "name": "linkedList",
+  "version": "1.0.0",
+  "description": "This is a test for utilizing stacks and queue data structures.",
+  "main": "stacks-and-queues.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.0.1",
+    "minimist": "^1.2.5"
+  }
+}
