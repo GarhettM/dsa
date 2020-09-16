@@ -1,0 +1,4 @@
+javaChallenges/LibraryTest.java
+ javaChallenges.LibraryTest
+javaChallenges/ArrayShiftTest.java
+ javaChallenges.ArrayShiftTest
