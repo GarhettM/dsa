@@ -5,11 +5,9 @@ public class BinarySearch {
 
         if(a <= z) {
             int mid = (a + z) / 2;
-            System.out.println(mid);
             if (arr[mid] == n) {
                 return mid;
             }
-
             if (arr[mid] > n) {
                 return binarySearch(arr, a, mid - 1, n);
             }
