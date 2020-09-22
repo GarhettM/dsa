@@ -4,6 +4,16 @@ public class LL {
     public Node head = null;
     public Node tail = null;
 
+    public static void main(String [] args) throws Exception{
+        LL ll = new LL();
+        ll.insert(1);
+        ll.insert(2);
+        ll.insert(3);
+        ll.insert(4);
+        System.out.println(ll);
+        ll.kthFromEnd(2);
+    }
+
     public String insert(int value) {
         Node node = new Node(value);
         if (this.head == null) {
@@ -69,12 +79,35 @@ public class LL {
             head = current.next;
         }
 
-        while (current != null) {
+        while (current.next != null) {
+
             if(current.next.value == value) {
                 current.next = current.next.next;
+                break;
             }
             current = current.next;
         }
+    }
+
+    public int kthFromEnd(int k) throws Exception {
+        Node current = head;
+        Node current2 = head;
+        int count = -k;
+        int a = 0;
+
+        while(current != null) {
+            if(count >= 0) {
+                a = current2.value;
+                System.out.println(a);
+                current2 = current2.next;
+            }
+            count++;
+            current = current.next;
+        }
+        if(k < 0) {
+            throw new Exception("Your input exceeds the length of the Linked List!");
+        }
+        return a;
     }
 
     public String toString() {
