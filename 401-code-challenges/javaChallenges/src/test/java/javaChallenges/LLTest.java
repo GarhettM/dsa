@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class LLTest {
     @Test
-    public void testLL() {
+    public void testLL() throws Exception{
         LL linkedList = new LL();
         linkedList.insert(1);
         linkedList.insert(2);
@@ -25,6 +25,8 @@ public class LLTest {
 
         linkedList.deleteNode(6);
         assertEquals("This should return with {1} -> {{3} -> {{2} -> {{5} -> {{1} -> {null}}}}}", "{1} -> {{3} -> {{2} -> {{5} -> {{1} -> {null}}}}}", linkedList.toString());
+
+        assertEquals("Should equal 6", 2, linkedList.kthFromEnd(2));
     }
 }
 
