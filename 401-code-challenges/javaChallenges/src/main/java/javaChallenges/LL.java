@@ -11,7 +11,7 @@ public class LL {
         ll.insert(3);
         ll.insert(4);
         System.out.println(ll);
-        ll.kthFromEnd(2);
+//        ll.kthFromEnd(2);
     }
 
     public String insert(int value) {
@@ -89,25 +89,48 @@ public class LL {
         }
     }
 
-    public int kthFromEnd(int k) throws Exception {
-        Node current = head;
-        Node current2 = head;
-        int count = -k;
-        int a = 0;
+//    public int kthFromEnd(int k) throws Exception {
+//        Node current = head;
+//        Node current2 = head;
+//        int count = -k;
+//        int a = 0;
+//
+//        while(current != null) {
+//            if(count >= 0) {
+//                a = current2.value;
+//                System.out.println(a);
+//                current2 = current2.next;
+//            }
+//            count++;
+//            current = current.next;
+//        }
+//        if(k < 0) {
+//            throw new Exception(-1);
+//        }
+//        return a;
+//    }
 
-        while(current != null) {
-            if(count >= 0) {
-                a = current2.value;
-                System.out.println(a);
-                current2 = current2.next;
+    public LL zip(LL first, LL second) {
+        Node firstL = first.head;
+        Node secondL = second.head;
+
+        while(firstL != null) {
+            if(secondL != null) {
+                Node newThing = new Node(secondL.value);
+                newThing.next = firstL.next;
+                firstL.next = newThing;
+
+                if(firstL.next.next != null) {
+                    firstL = firstL.next.next;
+                } else {
+                    firstL = firstL.next;
+                }
+                secondL = secondL.next;
+            } else {
+                break;
             }
-            count++;
-            current = current.next;
         }
-        if(k < 0) {
-            throw new Exception("Your input exceeds the length of the Linked List!");
-        }
-        return a;
+        return first;
     }
 
     public String toString() {
