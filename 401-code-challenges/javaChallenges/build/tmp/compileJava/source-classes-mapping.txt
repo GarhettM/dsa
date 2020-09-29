@@ -1,9 +1,13 @@
+javaChallenges/LL.java
+ javaChallenges.LL
+ javaChallenges.Node
 javaChallenges/ArrayShift.java
  javaChallenges.ArrayShift
 javaChallenges/BinarySearch.java
  javaChallenges.BinarySearch
 javaChallenges/Library.java
  javaChallenges.Library
-javaChallenges/LL.java
- javaChallenges.LL
- javaChallenges.Node
+javaChallenges/StacksAndQueues.java
+ javaChallenges.StacksAndQueues
+javaChallenges/PsuedoQueue.java
+ javaChallenges.PsuedoQueue
