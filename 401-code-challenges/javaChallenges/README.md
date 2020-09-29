@@ -17,6 +17,7 @@ Space: 0(2n) - Since we are not creating a third linked list to return and simpl
 ![image](./src/main/resources/second%20whiteboard.PNG)
 
 
+
 #### PseudoQueue
 
 PsuedoQueue instantiates two new stacks to be utilized to "act" as a Queue.
@@ -33,3 +34,4 @@ Testing:
     Tests make sure the enqueue works both by checking the entire stack and the return values
 
 ![image](./src/main/resources/challenge11.PNG)
+
