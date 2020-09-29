@@ -1,8 +1,10 @@
 javaChallenges/LibraryTest.java
  javaChallenges.LibraryTest
-javaChallenges/BinarySearchTest.java
- javaChallenges.BinarySearchTest
-javaChallenges/ArrayShiftTest.java
- javaChallenges.ArrayShiftTest
 javaChallenges/LLTest.java
  javaChallenges.LLTest
+javaChallenges/ArrayShiftTest.java
+ javaChallenges.ArrayShiftTest
+javaChallenges/BinarySearchTest.java
+ javaChallenges.BinarySearchTest
+javaChallenges/StacksAndQueuesTest.java
+ javaChallenges.StacksAndQueuesTest
