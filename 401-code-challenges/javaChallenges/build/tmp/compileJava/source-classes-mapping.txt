@@ -9,5 +9,6 @@ javaChallenges/Library.java
  javaChallenges.Library
 javaChallenges/StacksAndQueues.java
  javaChallenges.StacksAndQueues
+ javaChallenges.StacksAndQueues$NodeG
 javaChallenges/PsuedoQueue.java
  javaChallenges.PsuedoQueue
