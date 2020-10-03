@@ -1,9 +1,0 @@
-Kbegin stack1: {cat} -> {{cat} -> {{dog} -> {{dog} -> {{cat} -> {null}}}}}
-@stack1 final: {cat} -> {{cat} -> {{dog} -> {{cat} -> {null}}}}
-Dequeued value: dog
-@begin stack1: {cat} -> {{cat} -> {{dog} -> {{cat} -> {null}}}}
-5stack1 final: {cat} -> {{cat} -> {{dog} -> {null}}}
-Dequeued value: cat
-Cbegin stack1: {lizard} -> {{cat} -> {{cat} -> {{dog} -> {null}}}}
-5stack1 final: {cat} -> {{cat} -> {{dog} -> {null}}}
-Dequeued value: lizard

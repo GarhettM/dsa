@@ -1,14 +1,20 @@
+javaChallenges/ArrayShift.java
+ javaChallenges.ArrayShift
 javaChallenges/LL.java
  javaChallenges.LL
  javaChallenges.Node
-javaChallenges/ArrayShift.java
- javaChallenges.ArrayShift
+javaChallenges/PsuedoQueue.java
+ javaChallenges.PsuedoQueue
+javaChallenges/StacksAndQueues.java
+ javaChallenges.StacksAndQueues
+ javaChallenges.StacksAndQueues$NodeG
 javaChallenges/BinarySearch.java
  javaChallenges.BinarySearch
 javaChallenges/Library.java
  javaChallenges.Library
-javaChallenges/StacksAndQueues.java
- javaChallenges.StacksAndQueues
- javaChallenges.StacksAndQueues$NodeG
-javaChallenges/PsuedoQueue.java
- javaChallenges.PsuedoQueue
+tree/Node.java
+ tree.Node
+tree/Tree.java
+ tree.Tree
+tree/BinarySearchTree.java
+ tree.BinarySearchTree
