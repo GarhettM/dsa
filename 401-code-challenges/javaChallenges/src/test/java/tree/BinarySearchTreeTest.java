@@ -16,6 +16,6 @@ public class BinarySearchTreeTest {
         newTree.add(newTree.root,4);
 
         assertEquals("The inOrder Binary Search tree should be {9} -> {{7} -> {{6} -> {{4} -> {{3} -> {}}}}}", "{9} -> {{7} -> {{6} -> {{4} -> {{3} -> {}}}}}", newTree.toString());
-//        assertTrue( "should be true", true, newTree.contains(newTree.root, 9));
+        assertTrue("should be true", newTree.contains(newTree.root, 9));
     }
 }

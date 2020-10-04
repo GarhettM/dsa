@@ -1,3 +1,4 @@
+
 #### kthFromEnd:
 
 Method takes in an integer as the value from the tail of the Linked List.
@@ -17,7 +18,6 @@ Space: 0(2n) - Since we are not creating a third linked list to return and simpl
 ![image](./src/main/resources/second%20whiteboard.PNG)
 
 
-
 #### PseudoQueue
 
 PsuedoQueue instantiates two new stacks to be utilized to "act" as a Queue.
@@ -35,3 +35,17 @@ Testing:
 
 ![image](./src/main/resources/challenge11.PNG)
 
+
+#### MultiBracketValidation
+
+Methods:
+
+    multiBracketValidation - returns a boolean. 
+        Inputs are a simple string. The method will ignore all characters except for "(){}[]"
+
+        
+Testing: 
+
+    Tested for true values and false values. i.e. "[[]]" would return true, and "[[]]]" would return false.
+    
+ ![image](./src/main/resources/challenge12.PNG)
