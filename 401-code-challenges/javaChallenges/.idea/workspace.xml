@@ -130,12 +130,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/javaChallenges.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaChallenges/LL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaChallenges/LL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaChallenges/MultiBracketValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaChallenges/MultiBracketValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/javaChallenges/LLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javaChallenges/LLTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,20 +203,7 @@
       <recent name="C:\Users\32fos\codefellows\data-structures-and-algorithms\401-code-challenges\javaChallenges\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BinarySearchTreeTest.testBTInstanceTest">
-    <configuration name="BinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.BinarySearchTree" />
-      <module name="javaChallenges.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.LLTest.testLL">
     <configuration name="BinarySearchTreeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -253,12 +242,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TreeTest.testTreeInstance" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LLTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tree.TreeTest.testTreeInstance&quot;" />
+        <option name="scriptParameters" value="--tests &quot;javaChallenges.LLTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -272,12 +261,31 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TreeTest.testTreeOrders" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LLTest.testLL" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tree.TreeTest.testTreeOrders&quot;" />
+        <option name="scriptParameters" value="--tests &quot;javaChallenges.LLTest.testLL&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LLTest.testZip2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;javaChallenges.LLTest.testZip2&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -293,11 +301,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LLTest.testLL" />
+        <item itemvalue="Gradle.LLTest" />
+        <item itemvalue="Gradle.LLTest.testZip2" />
         <item itemvalue="Gradle.BinarySearchTreeTest.testBTInstanceTest" />
         <item itemvalue="Gradle.BinarySearchTreeTest" />
-        <item itemvalue="Gradle.TreeTest.testTreeOrders" />
-        <item itemvalue="Application.BinarySearchTree" />
-        <item itemvalue="Gradle.TreeTest.testTreeInstance" />
       </list>
     </recent_temporary>
   </component>
@@ -333,22 +341,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601529542630" />
-    <state width="1877" height="303" key="GridCell.Tab.0.bottom" timestamp="1601768858537">
+    <state width="1877" height="303" key="GridCell.Tab.0.bottom" timestamp="1601769885430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601768858537" />
-    <state width="1877" height="303" key="GridCell.Tab.0.center" timestamp="1601768858537">
+    <state width="1877" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601769885430" />
+    <state width="1877" height="303" key="GridCell.Tab.0.center" timestamp="1601769885430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601768858537" />
-    <state width="1877" height="303" key="GridCell.Tab.0.left" timestamp="1601768858537">
+    <state width="1877" height="303" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601769885430" />
+    <state width="1877" height="303" key="GridCell.Tab.0.left" timestamp="1601769885430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601768858537" />
-    <state width="1877" height="303" key="GridCell.Tab.0.right" timestamp="1601768858537">
+    <state width="1877" height="303" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601769885430" />
+    <state width="1877" height="303" key="GridCell.Tab.0.right" timestamp="1601769885430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601768858537" />
+    <state width="1877" height="303" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601769885430" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1601765774840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

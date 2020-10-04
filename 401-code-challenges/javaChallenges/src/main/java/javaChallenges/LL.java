@@ -4,16 +4,6 @@ public class LL {
     public Node head = null;
     public Node tail = null;
 
-    public static void main(String [] args) throws Exception{
-        LL ll = new LL();
-        ll.insert(1);
-        ll.insert(2);
-        ll.insert(3);
-        ll.insert(4);
-        System.out.println(ll);
-//        ll.kthFromEnd(2);
-    }
-
     public String insert(int value) {
         Node node = new Node(value);
         if (this.head == null) {
@@ -89,26 +79,26 @@ public class LL {
         }
     }
 
-//    public int kthFromEnd(int k) throws Exception {
-//        Node current = head;
-//        Node current2 = head;
-//        int count = -k;
-//        int a = 0;
-//
-//        while(current != null) {
-//            if(count >= 0) {
-//                a = current2.value;
-//                System.out.println(a);
-//                current2 = current2.next;
-//            }
-//            count++;
-//            current = current.next;
-//        }
-//        if(k < 0) {
-//            throw new Exception(-1);
-//        }
-//        return a;
-//    }
+    public int kthFromEnd(int k) throws Exception {
+        Node current = head;
+        Node current2 = head;
+        int count = -k;
+        int a = 0;
+
+        while(current != null) {
+            if(count >= 0) {
+                a = current2.value;
+                System.out.println(a);
+                current2 = current2.next;
+            }
+            count++;
+            current = current.next;
+        }
+        if(k < 0) {
+            throw new Exception("-1");
+        }
+        return a;
+    }
 
     public LL zip(LL first, LL second) {
         Node firstL = first.head;

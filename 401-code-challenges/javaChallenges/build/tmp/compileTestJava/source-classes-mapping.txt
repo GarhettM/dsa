@@ -1,7 +1,7 @@
 javaChallenges/LibraryTest.java
  javaChallenges.LibraryTest
-javaChallenges/LLTest.java
- javaChallenges.LLTest
+javaChallenges/BinarySearchTest.java
+ javaChallenges.BinarySearchTest
 tree/TreeTest.java
  tree.TreeTest
 javaChallenges/ArrayShiftTest.java
@@ -10,5 +10,5 @@ tree/BinarySearchTreeTest.java
  tree.BinarySearchTreeTest
 javaChallenges/StacksAndQueuesTest.java
  javaChallenges.StacksAndQueuesTest
-javaChallenges/BinarySearchTest.java
- javaChallenges.BinarySearchTest
+javaChallenges/LLTest.java
+ javaChallenges.LLTest
