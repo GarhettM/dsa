@@ -33,3 +33,18 @@ Testing:
     Tests make sure the enqueue works both by checking the entire stack and the return values
 
 ![image](./src/main/resources/challenge11.PNG)
+
+
+#### MultiBracketValidation
+
+Methods:
+
+    multiBracketValidation - returns a boolean. 
+        Inputs are a simple string. The method will ignore all characters except for "(){}[]"
+
+        
+Testing: 
+
+    Tested for true values and false values. i.e. "[[]]" would return true, and "[[]]]" would return false.
+    
+ ![image](./src/main/resources/challenge12.PNG)

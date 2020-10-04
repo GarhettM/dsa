@@ -2,6 +2,7 @@ package tree;
 
 public class BinarySearchTree {
     Node root = null;
+//    boolean temp = false;
     private Object EmptyStackException;
 
 
@@ -12,7 +13,7 @@ public class BinarySearchTree {
         newTree.add(newTree.root,9);
         newTree.add(newTree.root,7);
         newTree.add(newTree.root,4);
-        System.out.println(newTree.contains(newTree.root, 10));
+        System.out.println(newTree.contains(newTree.root, 9));
     }
 
     public void add(Node root, int value) {
@@ -36,18 +37,16 @@ public class BinarySearchTree {
     }
 
     public boolean contains(Node root, int value) {
-
         if(value == root.value) {
-            System.out.println("asdfg");
             return true;
         }
-        if(root.left != null) {
-           contains(root.left, value);
+        if(value < root.value && root.left != null) {
+            return contains(root.left, value);
+        } else if(value > root.value && root.right != null) {
+            return contains(root.right, value);
+        } else {
+            return false;
         }
-        if(root.right != null) {
-            contains(root.right, value);
-        }
-        return false;
     }
 
     public String toString() {
