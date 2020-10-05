@@ -1,16 +1,16 @@
 javaChallenges/LibraryTest.java
  javaChallenges.LibraryTest
-javaChallenges/BinarySearchTest.java
- javaChallenges.BinarySearchTest
-javaChallenges/LLTest.java
- javaChallenges.LLTest
-tree/TreeTest.java
- tree.TreeTest
-javaChallenges/ArrayShiftTest.java
- javaChallenges.ArrayShiftTest
-javaChallenges/StacksAndQueuesTest.java
- javaChallenges.StacksAndQueuesTest
-tree/BinarySearchTreeTest.java
- tree.BinarySearchTreeTest
 javaChallenges/MultiBracketValidationTest.java
  javaChallenges.MultiBracketValidationTest
+javaChallenges/LLTest.java
+ javaChallenges.LLTest
+javaChallenges/BinarySearchTest.java
+ javaChallenges.BinarySearchTest
+javaChallenges/ArrayShiftTest.java
+ javaChallenges.ArrayShiftTest
+tree/BinarySearchTreeTest.java
+ tree.BinarySearchTreeTest
+javaChallenges/StacksAndQueuesTest.java
+ javaChallenges.StacksAndQueuesTest
+tree/TreeTest.java
+ tree.TreeTest
