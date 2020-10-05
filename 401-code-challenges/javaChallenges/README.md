@@ -49,3 +49,20 @@ Testing:
     Tested for true values and false values. i.e. "[[]]" would return true, and "[[]]]" would return false.
     
  ![image](./src/main/resources/challenge12.PNG)
+ 
+ 
+ #### FindMaxValue
+ 
+ Methods: 
+ 
+    findMaxValue - returns the largest value in the tree. 
+        The only input needed is the root of the tree. Should be known that I created a class Variable to make it so the recursion could call upon the variable and give the node value something to compare against.
+ 
+ Testing:
+ 
+    Only thing to test is to make sure that different large values were passed into the maxValue variable and returned. Also tested for "NotEquals" to show that it would also work in the opposite direction given the wrong MaxValue.
+    
+ This method is o(1) space since it doesn't create anything, and o(n) time because we are recursively adding to an unknown size call stack.
+ 
+ ![image](./src/main/resources/challenge14.PNG)
+

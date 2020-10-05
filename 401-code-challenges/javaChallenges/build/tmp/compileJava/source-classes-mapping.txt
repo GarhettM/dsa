@@ -5,18 +5,18 @@ javaChallenges/LL.java
  javaChallenges.Node
 javaChallenges/PsuedoQueue.java
  javaChallenges.PsuedoQueue
-tree/Tree.java
- tree.Tree
+tree/Node.java
+ tree.Node
 javaChallenges/BinarySearch.java
  javaChallenges.BinarySearch
 javaChallenges/Library.java
  javaChallenges.Library
-tree/Node.java
- tree.Node
+javaChallenges/MultiBracketValidation.java
+ javaChallenges.MultiBracketValidation
 javaChallenges/ArrayShift.java
  javaChallenges.ArrayShift
 javaChallenges/StacksAndQueues.java
  javaChallenges.StacksAndQueues
  javaChallenges.StacksAndQueues$NodeG
-javaChallenges/MultiBracketValidation.java
- javaChallenges.MultiBracketValidation
+tree/Tree.java
+ tree.Tree

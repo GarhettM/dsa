@@ -31,4 +31,22 @@ public class TreeTest {
         assertEquals("If the wrong order is called in helper function it should return 'Wrong order.'", "Wrong order", newTree.orderHelper(newTree.root, "Huh?"));
 
     }
+
+    @Test
+    public void testTreeMaxValue() {
+        Tree newTree = new Tree();
+        newTree.root = new Node(1);
+        newTree.root.left = new Node(2);
+        newTree.root.right = new Node(3);
+        newTree.root.left.left = new Node(4);
+        newTree.root.left.right = new Node(5);
+
+
+        assertEquals("Should return 5 as the max value.", 5, newTree.findMaxValue(newTree.root));
+
+        newTree.root.right.right = new Node(12);
+        assertEquals("Should return 12 as the max value.", 12, newTree.findMaxValue(newTree.root));
+        assertNotEquals("Should fail", 3, newTree.findMaxValue(newTree.root));
+
+    }
 }

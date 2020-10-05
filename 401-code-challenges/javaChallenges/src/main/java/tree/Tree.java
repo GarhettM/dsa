@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Tree {
     Node root = null;
+    int maxValue = 0;
+
 
     public String orderHelper(Node root, String order) {
         ArrayList<Integer> newArr = new ArrayList<>();
@@ -62,4 +64,13 @@ public class Tree {
         }
         return arr.toString();
     }
+
+    public int findMaxValue(Node root) {
+        if(root.value > maxValue) maxValue = root.value;
+        if(root.left != null) findMaxValue(root.left);
+        if(root.right != null) findMaxValue(root.right);
+
+        return maxValue;
+    }
+
 }
