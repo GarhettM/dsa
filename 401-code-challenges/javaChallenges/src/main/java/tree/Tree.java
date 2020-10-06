@@ -1,10 +1,15 @@
 package tree;
 
+import org.checkerframework.checker.units.qual.A;
+
 import java.util.ArrayList;
+
 
 public class Tree {
     Node root = null;
     int maxValue = 0;
+    ArrayList<Node> tempArr = new ArrayList<>();
+    ArrayList<Integer> finalArr = new ArrayList<>();
 
 
     public String orderHelper(Node root, String order) {
@@ -72,5 +77,47 @@ public class Tree {
 
         return maxValue;
     }
+
+    public boolean isSearchTree(Node root) {
+
+        if(root.left != null) {
+            if(root.left.value > root.value) {
+                return false;
+            }
+            return isSearchTree(root.left);
+        }
+        if(root.right != null) {
+            if(root.right.value < root.value) {
+                return false;
+            }
+            return isSearchTree(root.right);
+        }
+        return true;
+    }
+
+    public ArrayList breadthFirst(Node root) {
+
+        tempArr.add(root);
+        bFHelper();
+
+        return finalArr;
+    }
+
+    private void bFHelper() {
+
+        if(tempArr.size() > 0) {
+            Node temp = tempArr.get(0);
+            if(temp.left != null) {
+                tempArr.add(temp.left);
+            }
+            if(temp.right != null) {
+                tempArr.add(temp.right);
+            }
+            finalArr.add(temp.value);
+            tempArr.remove(0);
+            bFHelper();
+        }
+    }
+
 
 }

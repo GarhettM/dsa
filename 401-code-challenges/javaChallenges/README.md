@@ -64,3 +64,17 @@ Testing:
  This method is o(1) space since it doesn't create anything, and o(n) time because we are recursively adding to an unknown size call stack.
  
  ![image](./src/main/resources/challenge14.PNG)
+ 
+ 
+ #### BreadthFirst
+ 
+ Methods:
+ 
+    breadthFirst - returns finalArr(class variable). Only job is to add the initial root of the tree to the temporary arraylist (tempArr). Then it kicks off the recursive function by calling the helper function below.
+    bFHelper - this helper function assists the the main function with traversal. It sets a temp variable to the index 0 of the tempArr and checks to see its left and right. Then adds those nodes to the temp arr if they exist. After that it adds the temp value to the final arr and removes index 0 of the temp arr.
+    
+ Testing:
+ 
+    I created two different trees and tested to see if I got the same Array in breadthfirst style. I used Arrays.asList() to enter the expected values.
+    
+ ![image](./src/main/resources/challenge17.PNG)
