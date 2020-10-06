@@ -8,9 +8,9 @@ javaChallenges/BinarySearchTest.java
  javaChallenges.BinarySearchTest
 javaChallenges/ArrayShiftTest.java
  javaChallenges.ArrayShiftTest
-tree/BinarySearchTreeTest.java
- tree.BinarySearchTreeTest
 javaChallenges/StacksAndQueuesTest.java
  javaChallenges.StacksAndQueuesTest
+tree/BinarySearchTreeTest.java
+ tree.BinarySearchTreeTest
 tree/TreeTest.java
  tree.TreeTest

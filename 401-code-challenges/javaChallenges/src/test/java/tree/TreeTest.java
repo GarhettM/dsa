@@ -1,6 +1,7 @@
 package tree;
 
 import org.junit.Test;
+import java.util.Arrays;
 
 import static org.junit.Assert.*;
 
@@ -49,4 +50,56 @@ public class TreeTest {
         assertNotEquals("Should fail", 3, newTree.findMaxValue(newTree.root));
 
     }
+
+    @Test
+    public void testIsSearchtreeValue() {
+        Tree newTree = new Tree();
+        newTree.root = new Node(1);
+        newTree.root.left = new Node(2);
+        newTree.root.right = new Node(3);
+        newTree.root.left.left = new Node(4);
+        newTree.root.left.right = new Node(5);
+
+
+        assertFalse("Should be false.", newTree.isSearchTree(newTree.root));
+
+
+        Tree newTree1 = new Tree();
+        newTree1.root = new Node(5);
+        newTree1.root.left = new Node(2);
+        newTree1.root.right = new Node(7);
+        newTree1.root.left.left = new Node(1);
+        newTree1.root.left.right = new Node(3);
+        newTree1.root.right.right = new Node(9);
+        newTree1.root.right.left = new Node(6);
+
+        assertTrue("Should be true.", newTree.isSearchTree(newTree1.root));
+
+    }
+
+    @Test
+    public void testTheBreadthFirst() {
+        Tree newTree = new Tree();
+        newTree.root = new Node(1);
+        newTree.root.left = new Node(2);
+        newTree.root.right = new Node(3);
+        newTree.root.left.left = new Node(4);
+        newTree.root.left.right = new Node(5);
+
+        assertEquals("The Breadfirst traversal should be [1, 2, 3, 4, 5].", Arrays.asList(1, 2, 3, 4, 5), newTree.breadthFirst(newTree.root));
+
+        Tree newTree1 = new Tree();
+        newTree1.root = new Node(4);
+        newTree1.root.left = new Node(6);
+        newTree1.root.right = new Node(2);
+        newTree1.root.left.left = new Node(9);
+        newTree1.root.left.right = new Node(4);
+        newTree1.root.right.right = new Node(12);
+        newTree1.root.left.right.left = new Node(53);
+
+        assertEquals("The Breadfirst traversal should be [4, 6, 2, 9, 4, 12, 53].", Arrays.asList(4, 6, 2, 9, 4, 12, 53), newTree1.breadthFirst(newTree1.root));
+
+    }
+
+
 }

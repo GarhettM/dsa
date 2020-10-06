@@ -13,7 +13,6 @@ public class BinarySearchTree {
         newTree.add(newTree.root,9);
         newTree.add(newTree.root,7);
         newTree.add(newTree.root,4);
-        System.out.println(newTree.contains(newTree.root, 9));
     }
 
     public void add(Node root, int value) {
@@ -67,7 +66,6 @@ public class BinarySearchTree {
 
         return conCat;
     }
-
 
     public void setRoot(Node root) {
         this.root = root;
