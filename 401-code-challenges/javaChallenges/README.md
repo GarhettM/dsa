@@ -1,3 +1,4 @@
+
 #### kthFromEnd:
 
 Method takes in an integer as the value from the tail of the Linked List.
@@ -92,3 +93,4 @@ Testing:
     I created a tree with some nodes divisible by 3, 5, or both. Then, called for my orderhelper method to present the array with all the values.
     
  ![image](./src/main/resources/challenge18.PNG)
+
