@@ -101,5 +101,20 @@ public class TreeTest {
 
     }
 
+    @Test
+    public void testFizzBuzz() {
+        Tree<Integer> newTree = new Tree<>();
+        newTree.root = new Node(1);
+        newTree.root.left = new Node(2);
+        newTree.root.right = new Node(3);
+        newTree.root.left.left = new Node(4);
+        newTree.root.left.right = new Node(5);
+        newTree.root.left.right.left = new Node(9);
+        newTree.root.left.left.left = new Node(15);
+
+        Tree testing = newTree.fizzBuzz(newTree.root);
+        assertEquals("This fizzbuzz tree should be [1, 2, 4, FizzBuzz, Buzz, Fizz, Fizz]", "[1, 2, 4, FizzBuzz, Buzz, Fizz, Fizz]", testing.orderHelper(testing.root, "preOrder"));
+    }
+
 
 }

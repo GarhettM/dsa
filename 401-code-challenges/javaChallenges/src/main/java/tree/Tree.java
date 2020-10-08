@@ -5,14 +5,27 @@ import org.checkerframework.checker.units.qual.A;
 import java.util.ArrayList;
 
 
-public class Tree {
-    Node root = null;
+public class Tree<T extends Comparable> {
+    Node<T> root = null;
     int maxValue = 0;
     ArrayList<Node> tempArr = new ArrayList<>();
-    ArrayList<Integer> finalArr = new ArrayList<>();
+    ArrayList<T> finalArr = new ArrayList<>();
 
+    public static void main(String[] args) {
+        Tree<Integer> newTree = new Tree<>();
+        newTree.root = new Node(1);
+        newTree.root.left = new Node(2);
+        newTree.root.right = new Node(3);
+        newTree.root.left.left = new Node(4);
+        newTree.root.left.right = new Node(5);
+        newTree.root.left.right.left = new Node(9);
+        newTree.root.left.left.left = new Node(15);
 
-    public String orderHelper(Node root, String order) {
+        Tree testing = newTree.fizzBuzz(newTree.root);
+        testing.orderHelper(testing.root, "preOrder");
+    }
+
+    public String orderHelper(Node<T> root, String order) {
         ArrayList<Integer> newArr = new ArrayList<>();
 
         switch (order) {
@@ -30,7 +43,7 @@ public class Tree {
         }
     }
 
-    public String preOrder(Node root, ArrayList arr) {
+    public String preOrder(Node<T> root, ArrayList arr) {
 
         arr.add(root.value);
 
@@ -43,7 +56,7 @@ public class Tree {
         return arr.toString();
     }
 
-    public String postOrder(Node root, ArrayList arr) {
+    public String postOrder(Node<T> root, ArrayList arr) {
 
         arr.add(root.value);
 
@@ -56,7 +69,7 @@ public class Tree {
         return arr.toString();
     }
 
-    public String inOrder(Node root, ArrayList arr) {
+    public String inOrder(Node<T> root, ArrayList arr) {
 
         if(root.left != null) {
             inOrder(root.left, arr);
@@ -70,24 +83,27 @@ public class Tree {
         return arr.toString();
     }
 
-    public int findMaxValue(Node root) {
-        if(root.value > maxValue) maxValue = root.value;
+    public int findMaxValue(Node<T> root) {
+        T rootValue = (T) root.value;
+        if(rootValue.compareTo(maxValue) > 0) maxValue = (int) rootValue;
         if(root.left != null) findMaxValue(root.left);
         if(root.right != null) findMaxValue(root.right);
 
         return maxValue;
     }
 
-    public boolean isSearchTree(Node root) {
-
+    public boolean isSearchTree(Node<T> root) {
+        T rootValue = (T) root.value;
         if(root.left != null) {
-            if(root.left.value > root.value) {
+            T leftValue = (T) root.left.value;
+            if(leftValue.compareTo(rootValue) > 0) {
                 return false;
             }
             return isSearchTree(root.left);
         }
         if(root.right != null) {
-            if(root.right.value < root.value) {
+            T rightValue = (T) root.right.value;
+            if(rightValue.compareTo(rootValue) < 0) {
                 return false;
             }
             return isSearchTree(root.right);
@@ -95,7 +111,7 @@ public class Tree {
         return true;
     }
 
-    public ArrayList breadthFirst(Node root) {
+    public ArrayList breadthFirst(Node<T> root) {
 
         tempArr.add(root);
         bFHelper();
@@ -113,11 +129,43 @@ public class Tree {
             if(temp.right != null) {
                 tempArr.add(temp.right);
             }
-            finalArr.add(temp.value);
+            finalArr.add((T)temp.value);
             tempArr.remove(0);
             bFHelper();
         }
     }
 
+    public Tree<String> fizzBuzz(Node root) {
+        Tree<String> fizzTree = new Tree();
 
+        fizzTree.root = new Node<>();
+        fizzHelper(root, fizzTree.root);
+
+        return fizzTree;
+    }
+
+    public void fizzHelper(Node root, Node rootS) {
+        int value = (int) root.value;
+
+        if(value % 3 == 0 && value % 5 == 0) {
+            rootS.value = "FizzBuzz";
+        } else if(value % 5 == 0) {
+            rootS.value = "Buzz";
+        } else if(value % 3 == 0) {
+            rootS.value = "Fizz";
+        } else {
+            rootS.value = String.format("%d", root.value);
+        }
+
+        if(root.left != null) {
+
+          rootS.left = new Node("");
+            fizzHelper(root.left, rootS.left);
+        }
+
+        if(root.right != null) {
+            rootS.right = new Node("");
+            fizzHelper(root.right, rootS.right);
+        }
+    }
 }

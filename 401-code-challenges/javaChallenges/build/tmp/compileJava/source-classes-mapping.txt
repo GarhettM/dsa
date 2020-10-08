@@ -1,13 +1,15 @@
-javaChallenges/StacksAndQueues.java
- javaChallenges.StacksAndQueues
- javaChallenges.StacksAndQueues$NodeG
+tree/BinarySearchTree.java
+ tree.BinarySearchTree
 javaChallenges/LL.java
  javaChallenges.LL
  javaChallenges.Node
 javaChallenges/PsuedoQueue.java
  javaChallenges.PsuedoQueue
-tree/Node.java
- tree.Node
+javaChallenges/StacksAndQueues.java
+ javaChallenges.StacksAndQueues
+ javaChallenges.StacksAndQueues$NodeG
+tree/TreeString.java
+ tree.TreeString
 javaChallenges/BinarySearch.java
  javaChallenges.BinarySearch
 javaChallenges/Library.java
@@ -16,7 +18,9 @@ javaChallenges/MultiBracketValidation.java
  javaChallenges.MultiBracketValidation
 javaChallenges/ArrayShift.java
  javaChallenges.ArrayShift
-tree/BinarySearchTree.java
- tree.BinarySearchTree
+tree/NodeString.java
+ tree.NodeString
+tree/Node.java
+ tree.Node
 tree/Tree.java
  tree.Tree
