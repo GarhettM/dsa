@@ -79,3 +79,18 @@ Testing:
     I created two different trees and tested to see if I got the same Array in breadthfirst style. I used Arrays.asList() to enter the expected values.
     
  ![image](./src/main/resources/challenge17.PNG)
+ 
+ 
+ #### FizzBuzz
+ 
+ Methods:
+ 
+    fizzBuzz - returns another tree. This method only instantiates another tree using the Generic Node. Then calls the helper function.
+    fizzHelper - this checks the value in the initial tree to check to see if its divisible by 3 and 5 and determines the string that should be added to the new tree. The new tree also adds a new node to the respective left or right if it exists before recursively calling this function.
+    
+ Testing: 
+ 
+    I created a tree with some nodes divisible by 3, 5, or both. Then, called for my orderhelper method to present the array with all the values.
+    
+ ![image](./src/main/resources/challenge18.PNG)
+
