@@ -1,0 +1,20 @@
+body {
+  background-color: dodgerblue;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: crimson;
+}
+
+p {
+  background-color: darkgray;
+  border-top: darkgreen;
+}
+
+img {
+  max-width: 75px;
+  max-height: 75px;
+}
