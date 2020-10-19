@@ -14,3 +14,5 @@ tree/BinarySearchTreeTest.java
  tree.BinarySearchTreeTest
 tree/TreeTest.java
  tree.TreeTest
+javaChallenges/InsertionSortTest.java
+ javaChallenges.InsertionSortTest

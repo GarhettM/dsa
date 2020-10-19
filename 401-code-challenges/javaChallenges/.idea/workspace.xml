@@ -23,101 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da97f0f7-474a-4bf8-8d19-23861ed5a4c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../challenges/11merge/11-merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/11merge/11-merge.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/11merge/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/11merge/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/BinaryTree/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/BinaryTree/binary-tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/BinaryTree/binary-tree.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/BinaryTree/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/BinaryTree/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayBinarySearch/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayBinarySearch/array-binary-search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayBinarySearch/array-binary-search.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/.github/workflows/javascript-tests.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/.github/workflows/react.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayReverse/reverse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayshift/array-shift.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/arrayshift/array-shift.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/assets/challenge16.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/assets/challenge27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/assets/challenge32.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/assets/challenge33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/assets/code3 whiteboard.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/assets/codechallenge26whiteboard.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/assets/codechallenge31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/assets/codechallenge6.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/insertion_sort/insertion_sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/insertion_sort/insertion_sort.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/insertion_sort/insertion_sort.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/insertion_sort/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/insertion_sort/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/merge_sort/merge_sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/merge_sort/merge_sort.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/merge_sort/merge_sort.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/merge_sort/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/blogs/merge_sort/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/depthFirst/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/depthFirst/depth-first.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/depthFirst/depth-first.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/fifoAnimalShelter/fifo_animal_shelter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/fifoAnimalShelter/fifo_animal_shelter.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/fizzBuzzTree/fizz-buzz-tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/fizzBuzzTree/fizz-buzz-tree.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/fizzBuzzTree/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/fizzBuzzTree/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/getEdges/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/getEdges/getEdges.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/getEdges/getEdges.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/getEdges/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/getEdges/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/graph/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/graph/graph.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/graph/graph.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/graph/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/graph/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/hashTable/hashTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/hashTable/hashTable.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/hashTable/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/hashTable/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/leftJoin/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/leftJoin/left-join.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/leftJoin/left-join.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/leftJoin/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/leftJoin/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/linkedList/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/linkedList/davids.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/linkedList/linked-list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/linkedList/linked-list.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/linkedList/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/linkedList/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/mostCommonWord/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/mostCommonWord/most-Common-Word.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/mostCommonWord/most-Common-Word.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/multiBracketValidation/multi-bracket-validation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/multiBracketValidation/multi-bracket-validation.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/queueWithStacks/queue-with-stacks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/reapetedWord/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/reapetedWord/repeatedWord.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/reapetedWord/repeatedword.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/stacksAndQueues/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/stacksAndQueues/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/stacksAndQueues/stacks-and-queues.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/stacksAndQueues/stacks-and-queues.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/tree/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/treeIntersection/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/treeIntersection/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/treeIntersection/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/treeIntersection/tree-intersection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenges/treeIntersection/tree-intersection.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CodeWarsKata/stringIncrementer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CodeWarsKata/stringIncrementer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CodeWarsKata/sumOfDigits.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CodeWarsKata/sumOfDigits.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +84,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../401-java/codefellowship" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
@@ -184,20 +93,7 @@
       <recent name="C:\Users\32fos\codefellows\data-structures-and-algorithms\401-code-challenges\javaChallenges\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TreeTest.testFizzBuzz">
-    <configuration name="BinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.BinarySearchTree" />
-      <module name="javaChallenges.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.InsertionSortTest.testSomeLibraryMethod">
     <configuration name="Tree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tree.Tree" />
       <module name="javaChallenges.main" />
@@ -210,6 +106,25 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="InsertionSortTest.testSomeLibraryMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;javaChallenges.InsertionSortTest.testSomeLibraryMethod&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="TreeTest.testFizzBuzz" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -270,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.InsertionSortTest.testSomeLibraryMethod" />
         <item itemvalue="Gradle.TreeTest.testFizzBuzz" />
         <item itemvalue="Application.Tree" />
         <item itemvalue="Gradle.TreeTest.testTheBreadthFirst" />
         <item itemvalue="Gradle.TreeTest.testIsSearchtreeValue" />
-        <item itemvalue="Application.BinarySearchTree" />
       </list>
     </recent_temporary>
   </component>
@@ -310,22 +225,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602021359891" />
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1602123304778">
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1603145207327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602123304778" />
-    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1602123304778">
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603145207327" />
+    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1603145207326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602123304778" />
-    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1602123304778">
+    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603145207326" />
+    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1603145207326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602123304778" />
-    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1602123304778">
+    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603145207326" />
+    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1603145207326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602123304778" />
+    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603145207326" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1601775588911">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -342,6 +257,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601775588911" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1603145949639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603145949639" />
     <state x="342" y="140" key="new project wizard" timestamp="1601337957809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
