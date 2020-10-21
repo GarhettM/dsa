@@ -24,3 +24,5 @@ javaChallenges/StacksAndQueues.java
  javaChallenges.StacksAndQueues$NodeG
 javaChallenges/InsertionSort.java
  javaChallenges.InsertionSort
+javaChallenges/MergeSort.java
+ javaChallenges.MergeSort

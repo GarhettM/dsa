@@ -16,3 +16,5 @@ tree/TreeTest.java
  tree.TreeTest
 javaChallenges/InsertionSortTest.java
  javaChallenges.InsertionSortTest
+javaChallenges/MergeSortTest.java
+ javaChallenges.MergeSortTest
