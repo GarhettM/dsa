@@ -92,3 +92,19 @@ Testing:
     I created a tree with some nodes divisible by 3, 5, or both. Then, called for my orderhelper method to present the array with all the values.
     
  ![image](./src/main/resources/challenge18.PNG)
+ 
+ 
+ #### Repeated Word
+ 
+ Methods:
+ 
+    repeatedWord - Returns the string of the word that repeats itself first in a string sentence
+    . If there is no words that repeat, the method with throw an exception. 
+    
+ Testing: 
+ 
+    I created an instance of the class and used both asertEquals, and assertThrows to test to
+     make sure that the string I was expecting was returned as well as if no words repeated then
+      the exception was thrown.
+      
+![image](./src/main/resources/repeatword.PNG)
