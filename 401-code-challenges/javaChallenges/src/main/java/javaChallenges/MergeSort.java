@@ -33,12 +33,14 @@ public class MergeSort {
         while (i < left.length && j < right.length) {
             if(left[i] <= right[j]) {
                 arr[k] = left[i];
-                i += 1;
+                i++;
+                k++;
             } else {
                 arr[k] = right[j];
-                j += 1;
+                j++;
+                k++;
             }
-            k += 1;
+            k++;
         }
 
         if(i == left.length) {

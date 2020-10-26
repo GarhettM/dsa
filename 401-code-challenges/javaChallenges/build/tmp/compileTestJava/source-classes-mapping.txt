@@ -18,3 +18,5 @@ javaChallenges/InsertionSortTest.java
  javaChallenges.InsertionSortTest
 javaChallenges/MergeSortTest.java
  javaChallenges.MergeSortTest
+javaChallenges/RepeatedWordTest.java
+ javaChallenges.RepeatedWordTest

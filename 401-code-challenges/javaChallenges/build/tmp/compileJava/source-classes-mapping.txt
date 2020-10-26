@@ -26,3 +26,5 @@ javaChallenges/InsertionSort.java
  javaChallenges.InsertionSort
 javaChallenges/MergeSort.java
  javaChallenges.MergeSort
+javaChallenges/RepeatedWord.java
+ javaChallenges.RepeatedWord
