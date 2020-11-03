@@ -1,22 +1,24 @@
 javaChallenges/LibraryTest.java
  javaChallenges.LibraryTest
-javaChallenges/MultiBracketValidationTest.java
- javaChallenges.MultiBracketValidationTest
-javaChallenges/LLTest.java
- javaChallenges.LLTest
-javaChallenges/BinarySearchTest.java
- javaChallenges.BinarySearchTest
-javaChallenges/ArrayShiftTest.java
- javaChallenges.ArrayShiftTest
-javaChallenges/StacksAndQueuesTest.java
- javaChallenges.StacksAndQueuesTest
-tree/BinarySearchTreeTest.java
- tree.BinarySearchTreeTest
-tree/TreeTest.java
- tree.TreeTest
 javaChallenges/InsertionSortTest.java
  javaChallenges.InsertionSortTest
 javaChallenges/MergeSortTest.java
  javaChallenges.MergeSortTest
+javaChallenges/TreeIntersectionTest.java
+ javaChallenges.TreeIntersectionTest
+javaChallenges/MultiBracketValidationTest.java
+ javaChallenges.MultiBracketValidationTest
+javaChallenges/LLTest.java
+ javaChallenges.LLTest
+tree/TreeTest.java
+ tree.TreeTest
+javaChallenges/ArrayShiftTest.java
+ javaChallenges.ArrayShiftTest
+javaChallenges/BinarySearchTest.java
+ javaChallenges.BinarySearchTest
 javaChallenges/RepeatedWordTest.java
  javaChallenges.RepeatedWordTest
+javaChallenges/StacksAndQueuesTest.java
+ javaChallenges.StacksAndQueuesTest
+GraphTest/GraphTest.java
+ GraphTest.GraphTest
