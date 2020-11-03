@@ -1,7 +1,5 @@
 package tree;
 
-import org.checkerframework.checker.units.qual.A;
-
 import java.util.ArrayList;
 
 
@@ -13,15 +11,15 @@ public class Tree<T extends Comparable> {
 
     public static void main(String[] args) {
         Tree<Integer> newTree = new Tree<>();
-        newTree.root = new Node(1);
-        newTree.root.left = new Node(2);
-        newTree.root.right = new Node(3);
-        newTree.root.left.left = new Node(4);
-        newTree.root.left.right = new Node(5);
-        newTree.root.left.right.left = new Node(9);
-        newTree.root.left.left.left = new Node(15);
+        newTree.root = new Node<>(1);
+        newTree.root.left = new Node<>(2);
+        newTree.root.right = new Node<>(3);
+        newTree.root.left.left = new Node<>(4);
+        newTree.root.left.right = new Node<>(5);
+        newTree.root.left.right.left = new Node<>(9);
+        newTree.root.left.left.left = new Node<>(15);
 
-        Tree testing = newTree.fizzBuzz(newTree.root);
+        Tree<String> testing = newTree.fizzBuzz(newTree.root);
         testing.orderHelper(testing.root, "preOrder");
     }
 
@@ -111,7 +109,7 @@ public class Tree<T extends Comparable> {
         return true;
     }
 
-    public ArrayList breadthFirst(Node<T> root) {
+    public ArrayList<T> breadthFirst(Node<T> root) {
 
         tempArr.add(root);
         bFHelper();
@@ -136,7 +134,7 @@ public class Tree<T extends Comparable> {
     }
 
     public Tree<String> fizzBuzz(Node root) {
-        Tree<String> fizzTree = new Tree();
+        Tree<String> fizzTree = new Tree<>();
 
         fizzTree.root = new Node<>();
         fizzHelper(root, fizzTree.root);
@@ -159,13 +157,29 @@ public class Tree<T extends Comparable> {
 
         if(root.left != null) {
 
-          rootS.left = new Node("");
+          rootS.left = new Node<>("");
             fizzHelper(root.left, rootS.left);
         }
 
         if(root.right != null) {
-            rootS.right = new Node("");
+            rootS.right = new Node<>("");
             fizzHelper(root.right, rootS.right);
         }
+    }
+
+    public Node<T> getRoot() {
+        return root;
+    }
+
+    public int getMaxValue() {
+        return maxValue;
+    }
+
+    public ArrayList<Node> getTempArr() {
+        return tempArr;
+    }
+
+    public ArrayList<T> getFinalArr() {
+        return finalArr;
     }
 }
