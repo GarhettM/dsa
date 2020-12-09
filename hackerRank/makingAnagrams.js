@@ -4,6 +4,25 @@
 
 // Given two strings,  and , that may or may not be of the same length, determine the minimum number of character deletions required to make  and  anagrams. Any characters can be deleted from either of the strings.
 
+// Faster way that makes more sense. This one turns the "b" string into the "duplicate" string to count the length of and add to the "first" string.
+
+// Function thats below is super long and does things step by step. 
+
+
+function makeAnagram(a, b) {
+let firstCopy = a;
+console.log(firstCopy);
+let first = a.split('');
+for(let char of first){
+    if(b.indexOf(char) !== -1){
+        firstCopy = firstCopy.replace(char, '');
+        b = b.replace(char, '');
+    }
+}
+return firstCopy.length + b.length
+}
+
+
 function makeAnagram(a, b) {
     let newA = a;
     let newB = b;
