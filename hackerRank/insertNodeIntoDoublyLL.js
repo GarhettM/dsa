@@ -30,7 +30,7 @@ function sortedInsert(head, data) {
             } else {
                 let temp = new DoublyLinkedListNode(data);
                 current.next = temp;
-                current.prev = current;
+                current.next.prev = current;
                 data = null;
             }
         }
