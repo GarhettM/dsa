@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: red;
+  font-style: italic;
+  font-size: ;
+}
+
+<div id="vote">
+                <form action="/game/vote" method="post" id="voteButton">
+                    <legend>Vote Out the Imposter!</legend>
+                    <ul th:each="player: ${allPlayers}">
+                <span th:if="${!player.isDead()}">
+                    <li th:style="'font-weight: bold; list-style-type: none;'">
+                    <input type="radio" name="vote" th:text="${player.username}" th:value="${player.username}">
+
+
+                    </li>
+                </span>
+                    </ul>
+                </form>
+            </div>
+
+
+            @PostMapping("/game/vote")
+            public RedirectView countVotes(Principal principal, String vote, Model m){
+                System.out.println(vote);
+                CreateGameController.startGame.setDiscuss(false);
+        
+                CreateGameController.startGame.playerList.get(vote).setDead(true);
+                m.addAttribute("playerOne", CreateGameController.startGame.playerList.get(principal.getName()) );
+                m.addAttribute("allPlayers", CreateGameController.startGame.playerList.values());
+                m.addAttribute("locationDeets", CreateGameController.startGame.currentLocation);
+                return new RedirectView("/game");
+            }git push 
