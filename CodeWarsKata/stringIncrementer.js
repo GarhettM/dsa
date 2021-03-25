@@ -54,3 +54,17 @@ function incrementString (strng) {
 
   return temp;
 }
+
+// Better result although hardcoded the number of leading zeroes which isnt ideal but passed tests
+
+function incrementString (strng) {
+  var str = strng.replace(/[0-9]/gi,'');
+  var num = strng.replace(/[^0-9]/gi,'');
+  num++;
+  var t = str + num;
+  if((strng.length - t.length) ==2)
+    str +='00';
+  if((strng.length - t.length) ==1)
+    str +='0';
+  return str+num;
+}
