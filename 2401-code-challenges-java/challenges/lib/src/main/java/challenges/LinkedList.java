@@ -26,6 +26,53 @@ public class LinkedList {
         return false;
     }
 
+    public void append(int value) {
+        Node node = new Node(value);
+        Node current = this.head;
+
+        while(current != null) {
+            if(current.next == null) {
+                current.next = node;
+                break;
+            }
+            current = current.next;
+        }
+        System.out.println("Node added to the end.");
+    }
+
+    public void insertBefore(int value, int ref) {
+        Node node = new Node(value);
+        Node current = this.head;
+
+        while(current != null) {
+            if(current.next.value == ref) {
+                Node temp = current.next;
+                current.next = node;
+                current.next.next = temp;
+                break;
+            }
+            current = current.next;
+        }
+
+        System.out.println(String.format("Node with value (%d) inserted before Node with value (%d).", value, ref));
+    }
+
+    public void insertAfter(int value, int ref) {
+        Node node = new Node(value);
+        Node current = this.head;
+
+        while(current != null) {
+            if(current.value == ref) {
+                Node temp = current.next;
+                current.next = node;
+                current.next.next = temp;
+                break;
+            }
+            current = current.next;
+        }
+        System.out.println(String.format("Node (%d) inserted after Node (%d).%n", value, ref));
+    }
+
     public String toString() {
         Node current = this.head;
 
