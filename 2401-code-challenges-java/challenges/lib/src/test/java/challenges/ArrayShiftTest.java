@@ -15,6 +15,6 @@ import java.util.ArrayList;
 //        testArr.add(7);
 //        testArr.add(9);
 //        int [] tester = {3, 6, 7, 8, 9};
-//        assertArrayEquals(tester, ArrayShift.shiftArray());
+//        assertArrayEquals(tester, ArrayShift.shiftArray(testArr, ));
 //    }
 //}
